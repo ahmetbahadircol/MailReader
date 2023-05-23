@@ -1,2 +1,4 @@
 .idea
 /venv
+username_and_password.txt
+__pycache__/
