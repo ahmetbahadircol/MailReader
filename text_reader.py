@@ -5,9 +5,9 @@ class TextReader:
 
     def read(self, key: str, file_name: str, path: str = None):
         if not path:
-            self.path = os.getcwd()
+            path = os.getcwd()
 
-        with open(file_name, "r") as f:
+        with open(path + "/" + file_name, "r") as f:
             for line in f.readlines():
                 line = line.replace(" ", "").replace("\n", "")
                 splitted_key = line.split("=")
