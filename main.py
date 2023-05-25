@@ -1,8 +1,9 @@
-from emails import *
+from emails import get_email
 
 
 def main():
-    get_email(login_email_account())
+    # get attachment of email
+    get_email()
 
 
 main()

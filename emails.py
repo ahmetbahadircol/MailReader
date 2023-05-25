@@ -16,7 +16,7 @@ def login_email_account():
     return imap
 
 
-def get_email(imap):
+def get_email(imap=login_email_account()):
     imap.select("INBOX")
 
     _, selected_mails = imap.search(None, '(FROM "enpara@mailer.enpara.com")')
