@@ -1,4 +1,5 @@
 .idea
 /venv
-username_and_password.txt
+environment_variables.txt
 __pycache__/
+*.pdf
